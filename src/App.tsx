@@ -15,8 +15,8 @@ function App() {
             <Rating value={3}/>
 
 
-            <Accordion title={"Hey"}/>
-            <Accordion title={"yo"}/>
+            <Accordion titleValue={"Menu"}/>
+            <Accordion titleValue={"Users"}/>
 
 
 
@@ -31,10 +31,10 @@ function App() {
     );
 }
 
-type PagePropsTitle={
+type PageTitlePropsTitle={
     title:string
 }
-const PageTitle:React.FC<PagePropsTitle>=(props)=> {
+const PageTitle:React.FC<PageTitlePropsTitle>=(props)=> {
     return <h1>{props.title}</h1>
 }
 
