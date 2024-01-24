@@ -7,45 +7,47 @@ import {OnOff} from "./components/onOff/onOff";
 import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 import {Rating, ValueType} from "./components/Rating/Rating";
-
-
+import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
 
 
 function App() {
-
+    // это state для компоненты Rating
     let [ratingValue, setRatingValue] = useState<ValueType>(0)
-
+    // это state для компоненты Accordion
+    let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(true)
+    // это state для компоненты OnOff
+    let [switchOn, setSwitchOn] = useState<boolean>(true)
 
     return (
         <div className="App">
-            {/*<img src="https://avatars.mds.yandex.net/i?id=f9af22afacc4b1040b23ceb0c98f67045db6cb1e-9456276-images-thumbs&n=13" alt="react"/>*/}
-
+            {/*<img*/}
+            {/*    src="https://avatars.mds.yandex.net/i?id=f9af22afacc4b1040b23ceb0c98f67045db6cb1e-9456276-images-thumbs&n=13"*/}
+            {/*    alt="react"/>*/}
+            {/*<hr/>*/}
             {/*<PageTitle title={"This is app components"}/>*/}
             {/*<PageTitle title={"My friends"}/>*/}
             {/*Article 1*/}
-            {/*<Rating value={3}/>*/}
 
 
-            <OnOff/>
+            {/*<OnOff on={switchOn} onChange={setSwitchOn}/>*/}
+            {/*<hr/>*/}
 
+            {/*<Accordion titleValue={"Menu"} collapsed={accordionCollapsed}*/}
+            {/*           onChange={() => setAccordionCollapsed(!accordionCollapsed)}/>*/}
+            {/*<Accordion titleValue={"Users"} collapsed={accordionCollapsed}*/}
+            {/*           onChange={() => setAccordionCollapsed(!accordionCollapsed)}/>*/}
+            {/*<hr/>*/}
 
-            <Accordion titleValue={"Menu"} collapsed={false}/>
-            <Accordion titleValue={"Users"} collapsed={false}/>
+            {/*<UncontrolledAccordion titleValue={"Menu-2"}/>*/}
+            {/*<UncontrolledAccordion titleValue={"Users-2"}/>*/}
 
+            {/*<hr/>*/}
+            {/*<UncontrolledRating/>*/}
 
-            <UncontrolledAccordion titleValue={"Menu-2"}/>
-            <UncontrolledAccordion titleValue={"Users-2"}/>
-
-
-            <UncontrolledRating/>
-
-
-            {/*<Rating value={0}/>*/}
-            {/*<Rating value={1}/>*/}
-            {/*<Rating value={2}/>*/}
-            <Rating value={ratingValue} onClick={setRatingValue}/>
-            {/*<Rating value={4}/>*/}
-            {/*<Rating value={5}/>*/}
+            {/*<hr/>*/}
+            {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
+            {/*<hr/>*/}
+            {/*<UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}*/}
         </div>
     );
 }
