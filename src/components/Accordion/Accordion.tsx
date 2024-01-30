@@ -23,7 +23,7 @@ type AccordionPropsTitleProps = {
 }
 const AccordionTitle: React.FC<AccordionPropsTitleProps> = (props) => {
     return (
-        <h3 onClick={props.onChange}>{props.title}</h3>
+        <h3 onClick={(event)=>props.onChange()}>{props.title}</h3>
     )
 }
 

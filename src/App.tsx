@@ -20,10 +20,10 @@ function App() {
 
     return (
         <div className="App">
-            {/*<img*/}
-            {/*    src="https://avatars.mds.yandex.net/i?id=f9af22afacc4b1040b23ceb0c98f67045db6cb1e-9456276-images-thumbs&n=13"*/}
-            {/*    alt="react"/>*/}
-            {/*<hr/>*/}
+            <img
+                src="https://avatars.mds.yandex.net/i?id=f9af22afacc4b1040b23ceb0c98f67045db6cb1e-9456276-images-thumbs&n=13"
+                alt="react"/>
+            <hr/>
             {/*<PageTitle title={"This is app components"}/>*/}
             {/*<PageTitle title={"My friends"}/>*/}
             {/*Article 1*/}
@@ -32,13 +32,15 @@ function App() {
             {/*<OnOff on={switchOn} onChange={setSwitchOn}/>*/}
             {/*<hr/>*/}
 
-            {/*<Accordion titleValue={"Menu"} collapsed={accordionCollapsed}*/}
-            {/*           onChange={() => setAccordionCollapsed(!accordionCollapsed)}/>*/}
+            <Accordion
+                titleValue={"Menu"}
+                collapsed={accordionCollapsed}
+                onChange={() => setAccordionCollapsed(!accordionCollapsed)}/>
             {/*<Accordion titleValue={"Users"} collapsed={accordionCollapsed}*/}
             {/*           onChange={() => setAccordionCollapsed(!accordionCollapsed)}/>*/}
             {/*<hr/>*/}
 
-            {/*<UncontrolledAccordion titleValue={"Menu-2"}/>*/}
+            <UncontrolledAccordion titleValue={"Menu-2"}/>
             {/*<UncontrolledAccordion titleValue={"Users-2"}/>*/}
 
             {/*<hr/>*/}
