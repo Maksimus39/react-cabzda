@@ -1,5 +1,3 @@
-import {useState} from "react";
-
 type OnOffPropsType = {
     on: boolean
     onChange: (on:boolean) => void
@@ -7,8 +5,6 @@ type OnOffPropsType = {
 
 export function OnOff(props: OnOffPropsType) {
 
-
-    //  let [on, setOn] = useState(false)
 
     const onStyle = {
         width: "30px",
