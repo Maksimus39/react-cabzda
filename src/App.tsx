@@ -29,7 +29,7 @@ function App() {
             {/*Article 1*/}
 
 
-            <OnOff on={switchOn} onChange={setSwitchOn}/>
+            {/*<OnOff on={switchOn} onChange={setSwitchOn}/>*/}
             {/*<hr/>*/}
 
             {/*<Accordion*/}
@@ -40,14 +40,14 @@ function App() {
             {/*           onChange={() => setAccordionCollapsed(!accordionCollapsed)}/>*/}
             {/*<hr/>*/}
 
-            {/*<UncontrolledAccordion titleValue={"Menu-2"}/>*/}
+            <UncontrolledAccordion titleValue={"Menu-2"}/>
             {/*<UncontrolledAccordion titleValue={"Users-2"}/>*/}
 
             {/*<hr/>*/}
             {/*<UncontrolledRating/>*/}
 
             <hr/>
-            <Rating value={ratingValue} onClick={setRatingValue}/>
+            {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
             {/*<hr/>*/}
             {/*<UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}*/}
         </div>
