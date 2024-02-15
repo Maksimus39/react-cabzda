@@ -31,7 +31,7 @@ function App() {
       {/*/>*/}
       {/*<Accordion titleValue={"Users"} collapsed={accordionCollapsed}*/}
       {/*           onChange={() => setAccordionCollapsed(!accordionCollapsed)}/>*/}
-      <hr />
+      {/*<hr />*/}
 
       {/*<UncontrolledAccordion titleValue={"Menu-2"} />*/}
       {/*<UncontrolledAccordion titleValue={"Users-2"}/>*/}
@@ -39,7 +39,7 @@ function App() {
       {/*<hr/>*/}
       {/*<UncontrolledRating/>*/}
 
-      <hr />
+      {/*<hr />*/}
       {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
       {/*<hr/>*/}
       {/*<UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}*/}
