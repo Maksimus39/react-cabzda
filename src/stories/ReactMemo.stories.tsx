@@ -25,10 +25,10 @@ export const Example1 = () => {
   const [counter, setCounter] = useState(0);
   const [users, setUsers] = useState<string[]>(["Dimych", "Valera", "Artem"]);
 
-  const addUser = () => {
-    const newUsers = [...users, "Sveta " + new Date().getTime()];
-    setUsers(newUsers);
-  };
+  // const addUser = () => {
+  //   const newUsers = [...users, "Sveta " + new Date().getTime()];
+  //   setUsers(newUsers);
+  // };
 
   return (
     <>
@@ -39,7 +39,7 @@ export const Example1 = () => {
       >
         +
       </button>
-      <button onClick={addUser}>add user</button>
+      {/*<button onClick={addUser}>add user</button>*/}
 
       <NewMessagesCounter count={counter} />
       <Users users={users} />
