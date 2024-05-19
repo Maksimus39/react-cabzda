@@ -73,3 +73,66 @@ export const Clock = () => {
     </div>
   );
 };
+
+export const ResetEffectExample = () => {
+  const [counter, setCounter] = useState(1);
+  console.log("Component rendering with" + counter);
+
+  useEffect(() => {
+    console.log("Effect occurred");
+
+    return () => {
+      console.log("Reset effect" + counter);
+    };
+  }, [counter]);
+
+  return (
+    <div>
+      Hello, counter:{counter}
+      <button
+        onClick={() => {
+          setCounter(counter + 1);
+        }}
+      >
+        +
+      </button>
+    </div>
+  );
+};
+
+export const KeysTrackerExample = () => {
+  const [text, setText] = useState("");
+  console.log("Component rendering with" + text);
+
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      console.log(e.key);
+      setText(text + e.key);
+    };
+
+    window.addEventListener("keypress", handler);
+    return () => {
+      window.removeEventListener("keypress", handler);
+    };
+  }, [text]);
+
+  return <div>Typed text:{text}</div>;
+};
+
+export const SetTimeOutExample = () => {
+  const [text, setText] = useState("");
+  console.log("Component rendering with" + text);
+
+  useEffect(() => {
+    const timeoutID = setTimeout(() => {
+      console.log("Timeout expired");
+      setText("3 seconds passed");
+    }, 3000);
+
+    return () => {
+      clearTimeout(timeoutID);
+    };
+  }, [text]);
+
+  return <div>Typed text:{text}</div>;
+};
