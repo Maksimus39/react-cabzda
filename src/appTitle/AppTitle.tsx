@@ -1,5 +1,9 @@
-export function AppTitle() {
+
+type AppTitleProps = {
+    title:string
+}
+export function PageTitle(props: AppTitleProps) {
     return (
-        <h2>This is App Component</h2>
+        <h2>{props.title}</h2>
     )
 }

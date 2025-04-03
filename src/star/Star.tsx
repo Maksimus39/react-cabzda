@@ -1,11 +1,14 @@
-export const Star = () => {
+type StarProps = {
+    selected: boolean
+}
+
+export const Star = (props: StarProps) => {
+    const {selected} = props
     return (
-        <div>
-            <div>Star</div>
-            <div>Star</div>
-            <div>Star</div>
-            <div>Star</div>
-            <div>Star</div>
-        </div>
+        <>
+            {selected
+                ? <span> <b>Star:-</b></span>
+                : <span>Star:-</span>}
+        </>
     )
 }

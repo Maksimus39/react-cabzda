@@ -1,9 +1,17 @@
 import {Star} from "../star/Star.tsx";
 
-export const Rating = () => {
+type Props = {
+    value?: number;
+}
+export const Rating = (props:Props) => {
     return (
         <div>
-            <Star/>
+            <Star selected={true} />
+            <Star selected={true}/>
+            <Star selected={true}/>
+            <Star selected={true}/>
+            <Star selected={true}/>
+            <Star selected={true}/>
         </div>
     )
 }

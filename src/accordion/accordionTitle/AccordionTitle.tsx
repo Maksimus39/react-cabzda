@@ -1,7 +1,11 @@
-export const AccordionTitle = () => {
+
+type Props={
+    props:string
+}
+export const AccordionTitle = (props:Props) => {
     return (
         <>
-            <h3>Menu</h3>
+            <h3>{props.props}</h3>
         </>
     );
 };

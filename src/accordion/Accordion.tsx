@@ -1,11 +1,14 @@
 import {AccordionTitle} from "./accordionTitle/AccordionTitle.tsx";
 import {AccordionBody} from "./accordionBody/AccordionBody.tsx";
 
-export const Accordion = () => {
+type AccordionProps = {
+    title: string;
+}
+export const Accordion = (props:AccordionProps) => {
     return (
-        <div>
-            <AccordionTitle/>
+        <>
+            <AccordionTitle props={props.title}/>
             <AccordionBody/>
-        </div>
+        </>
     )
 }
