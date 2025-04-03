@@ -1,4 +1,4 @@
-import {Star} from "./Star.tsx";
+import {Star} from "../star/Star.tsx";
 
 export const Rating = () => {
     return (
