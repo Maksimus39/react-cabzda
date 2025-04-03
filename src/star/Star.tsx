@@ -7,8 +7,8 @@ export const Star = (props: StarProps) => {
     return (
         <>
             {selected
-                ? <span> <b>Star:-</b></span>
-                : <span>Star:-</span>}
+                ? <span> <b>Star:- </b></span>
+                : <span>Star:- </span>}
         </>
     )
 }
