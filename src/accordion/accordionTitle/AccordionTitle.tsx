@@ -1,11 +1,11 @@
 
 type Props={
-    props:string
+    title:string
 }
 export const AccordionTitle = (props:Props) => {
     return (
         <>
-            <h3>{props.props}</h3>
+            <h3>{props.title}</h3>
         </>
     );
 };

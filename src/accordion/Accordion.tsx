@@ -3,12 +3,20 @@ import {AccordionBody} from "./accordionBody/AccordionBody.tsx";
 
 type AccordionProps = {
     title: string;
+    collapsed: boolean;
 }
-export const Accordion = (props:AccordionProps) => {
+export const Accordion = (props: AccordionProps) => {
     return (
         <>
-            <AccordionTitle props={props.title}/>
-            <AccordionBody/>
+            {props.collapsed
+                ? <div>
+                    <AccordionTitle title={props.title}/>
+                </div>
+                : <div>
+                    <AccordionTitle title={props.title}/>
+                    <AccordionBody/>
+                </div>
+            }
         </>
     )
 }

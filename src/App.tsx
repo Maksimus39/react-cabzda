@@ -13,8 +13,8 @@ function App() {
             <Rating value={4}/>
             <Rating value={5}/>
             <PageTitle title={"This is my Friends"}/>
-            <Accordion title={"Title-1"}/>
-            <Accordion title={"Title-2"}/>
+            <Accordion title={"Title-1"} collapsed={true}/>
+            <Accordion title={"Title-2"} collapsed={false}/>
             <Rating/>
         </div>
     )
