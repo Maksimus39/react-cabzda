@@ -2,6 +2,7 @@ import './App.css'
 import {Rating} from "./rating/Rating.tsx";
 import {Accordion} from "./accordion/Accordion.tsx";
 import {PageTitle} from "./appTitle/AppTitle.tsx";
+import {OnOff} from "./onOff/OnOff.tsx";
 
 function App() {
     return (
@@ -16,6 +17,12 @@ function App() {
             <Accordion title={"Title-1"} collapsed={true}/>
             <Accordion title={"Title-2"} collapsed={false}/>
             <Rating/>
+
+
+            <OnOff/>
+            <OnOff/>
+            <OnOff/>
+            <OnOff/>
         </div>
     )
 }
