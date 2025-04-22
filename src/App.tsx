@@ -3,8 +3,13 @@ import {Rating} from "./rating/Rating.tsx";
 import {Accordion} from "./accordion/Accordion.tsx";
 import {PageTitle} from "./appTitle/AppTitle.tsx";
 import {OnOff} from "./onOff/OnOff.tsx";
+import {UncontrolledAccordion} from "./uncontrolledAccordion/UncontrolledAccordion.tsx";
+import {UncontrolledRating} from "./uncontrolledRating/UncontrolledRating.tsx";
+import {useState} from "react";
 
 function App() {
+    const [uncontrolAccordion, setUncontrolAccordion] = useState(false);
+
     return (
         <div className="App">
             <PageTitle title={"This is App Component"}/>
@@ -14,8 +19,12 @@ function App() {
             <Rating value={4}/>
             <Rating value={5}/>
             <PageTitle title={"This is my Friends"}/>
+
+
             <Accordion title={"Title-1"} collapsed={true}/>
             <Accordion title={"Title-2"} collapsed={false}/>
+
+
             <Rating/>
 
 
@@ -23,6 +32,13 @@ function App() {
             <OnOff/>
             <OnOff/>
             <OnOff/>
+
+
+            <UncontrolledAccordion title={"Uncontrolled---------------"}
+                                   uncontrolAccordion={() => setUncontrolAccordion(!uncontrolAccordion)}/>
+            <UncontrolledAccordion title={"Uncontrolled-2"}/>
+
+            <UncontrolledRating/>
         </div>
     )
 }
