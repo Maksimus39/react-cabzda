@@ -1,7 +1,7 @@
 type StarProps = {
     selected?: boolean
-    value?: 1 | 2 | 3 | 4 | 5
-    setValue?: (value: 1 | 2 | 3 | 4 | 5) => void
+    value: 1 | 2 | 3 | 4 | 5
+    setValue: (value: 1 | 2 | 3 | 4 | 5) => void
 }
 
 export const Star = (props: StarProps) => {
