@@ -1,5 +1,5 @@
 import './App.css'
-import UseMemo from "./useMemo/UseMemo.tsx";
+import LikeUseCallBack from "./useCallback/UseCallBack.tsx";
 
 function App() {
     // const [uncontrolAccordion, setUncontrolAccordion] = useState(false);
@@ -34,7 +34,7 @@ function App() {
 
             {/*<UncontrolledRating/>*/}
 
-            <UseMemo/>
+       <LikeUseCallBack/>
         </div>
     )
 }
