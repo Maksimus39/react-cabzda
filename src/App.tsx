@@ -1,5 +1,5 @@
 import './App.css'
-import ReactMemo from "./reactMemo/ReactMemo.tsx";
+import UseMemo from "./useMemo/UseMemo.tsx";
 
 function App() {
     // const [uncontrolAccordion, setUncontrolAccordion] = useState(false);
@@ -34,7 +34,7 @@ function App() {
 
             {/*<UncontrolledRating/>*/}
 
-            <ReactMemo/>
+            <UseMemo/>
         </div>
     )
 }

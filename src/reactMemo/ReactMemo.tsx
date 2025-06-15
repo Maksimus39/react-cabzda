@@ -9,17 +9,17 @@ const Counter = (props: { count: number }) => {
 type UsersArray = {
     users: string[]
 }
-const Users = (props: UsersArray) => {
+const Users = React.memo((props: UsersArray) => {
     console.log('USERS')
     return props.users.map((u, i) => <div key={i}>{u}</div>)
-}
+})
 
-const UsersMemo = React.memo(Users)
+// const UsersMemo = React.memo(Users)
 
 const ReactMemo = () => {
    // console.log('REACT_MEMO')
     const [count, setCount] = useState(0)
-    const [users, setUsers] = useState(['Max', 'Larisa', 'Andrey', 'Bogdan'])
+    const [users] = useState(['Max', 'Larisa', 'Andrey', 'Bogdan'])
 
     const setCountHandler = () => {
         setCount(count + 1)
@@ -28,7 +28,7 @@ const ReactMemo = () => {
     return (
         <>
             <button onClick={setCountHandler}>+</button>
-            <UsersMemo users={users}/>
+            <Users users={users}/>
             <Counter count={count}/>
         </>
     );
